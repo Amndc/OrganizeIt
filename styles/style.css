@@ -8,8 +8,12 @@ body{
     
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 #Nav-Bar-Esquerda{
-padding: 0;
+   padding: 0;
    position: fixed;
    height: 90vh;
    background-color: rgb(250, 248, 248);
@@ -17,7 +21,7 @@ padding: 0;
    box-shadow: 2px 1px 3px 1px rgba(0,0,0,0.2);
    /* border-top-right-radius: 8px; */
    border-bottom-right-radius: 8px;   
- 
+   transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
    top:10px;
 }
 
@@ -29,17 +33,12 @@ padding: 0;
 
 #Nav-Bar-Esquerda ul li{
     align-items: center;
-    text-indent: 35px;
-    display: flex;    
-    margin:0 auto;    
-     
+    text-indent: 35px;      
+    margin:0 auto;      
     letter-spacing: 0.6px;
     height: 40px;
 }
 
-#Nav-Bar-Esquerda ul li:hover{    
-    background-color: rgb(235, 236, 236);
-}
 
 #Nav-Bar-Esquerda #perfil{
     margin: 0 auto;
@@ -93,6 +92,8 @@ padding: 0;
     border-top-right-radius: 8px;
     align-items: center;
     display:flex;
+    transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
+
     
  }
 
@@ -100,14 +101,45 @@ padding: 0;
     font-size: 15px;
     margin:0 auto;
     color:gray;
+    position: absolute;
+    margin-left:9px;
  }
 
- #Nav-Bar-Esquerda #Open-Close #open{ 
-    display: none;
-    font-size: 15px;
-    margin:0 auto;
-    color:gray;
- }
+
+ #Nav-Bar-Esquerda ul li .Titulo h4{
+   margin: 0;
+}
+
+#Nav-Bar-Esquerda ul li .Titulo .divider{
+    width: 220px;
+    height: 1px;
+    background: rgb(206, 204, 204);
+    margin-left:25px;
+    box-shadow: 0px 2px 4px 1px rgb(0,0,0,0.1);
+}
+
+ 
+ #Nav-Bar-Esquerda ul li #add-toDo{
+    text-indent: 35px;
+    display: flex;    
+    margin:0 auto;         
+    letter-spacing: 0.6px;
+    height: 40px;
+}
+
+#Nav-Bar-Esquerda ul li #add-toDo {
+    color:rgb(172, 172, 172);
+    margin-top:10px;
+    width: 100%;
+    display: block;
+    cursor:pointer;
+}
+
+#Nav-Bar-Esquerda ul li #add-toDo i{
+    color:rgb(172, 172, 172);
+    float: right;
+    margin-right: 40px;
+}
 
 
 

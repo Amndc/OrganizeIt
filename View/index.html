@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0">
     <title>OrganizeIt</title>
     <link rel="icon" href="../img/LogoProvisoria.png" type="image/x-icon">
-    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link href="../styles/style.css" rel="stylesheet" type="text/css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="../scripts/Script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <script src="../scripts/Script.js"></script>
+
 </head>
 <body>
+
+    <div id="Background-Container">           
+    </div>
+
         <nav id="Nav-Bar-Esquerda">
 
             <div id="Open-Close">
-                <i  id="open"  class="fas fa-chevron-right hidden" onclick="openCloseMenu()"></i>
-                <i  id="close" class="fas fa-chevron-left" onclick="openCloseMenu()"></i>
+                <i   id="open"   class="fas fa-chevron-right hidden" onclick="openCloseMenu()"></i>
+                <i   id="close" class="fas fa-chevron-left" onclick="openCloseMenu()"></i>
             </div>
             <section  id="perfil">
                 <figure>
@@ -34,18 +35,23 @@
                 </div>
             </section >
             <ul id="contents" >
-                <li>
-                  <div class="Titulo">
+            <li>
+                <div class="Titulo">
                      <h4>To-do</h4> 
                     <div class="divider"></div>
                   </div>
                 
-                <section id="add-toDo">
-                    <label>Adicionar</label>
-                    <i class="fas fa-plus-square"></i>
+                  <section id="add-toDo" onclick="insertNewTodo()">                    
+                    <input type="text" id="input-ToDo" placeholder="Adicionar" disabled="disabled">
+                    <i id="plus-check" class="fas fa-plus-square"></i>
                 </section>
+
+                <div id="lista-Elementos-ToDo">
+
+                </div>
             </li>
-                <li style="margin-top: 40px;">Lista</li>
+                <li style="margin-top: 100px;">Lista</li>                          
+           
                 <li>Link aqui</li>
                 <li>Link aqui</li>
                 <li>Link aqui</li>

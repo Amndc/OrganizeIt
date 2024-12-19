@@ -18,4 +18,4 @@ Este projeto está em desenvolvimento e foi criado com o objetivo de treinar min
 Funcionalidades e melhorias estão sendo constantemente adicionadas.
 
 Contribuições
-Feedbacks e sugestões são muito bem-vindos! Abra uma issue ou envie um pull request com suas ideias.
+Feedbacks e sugestões são muito bem-vindos!

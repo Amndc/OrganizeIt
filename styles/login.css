@@ -1,0 +1,80 @@
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color:#9B73EA;
+    height: 100vh;
+    width: 100vw;
+}
+#wave-top{
+    position: absolute;
+    left: 0;
+    margin: 0;
+    top:-5px;
+    background-image: url('/Img/wave3.png');
+    background-size: 500px 230px;
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 230px;
+}
+
+#wave-bottom{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    bottom:-5px;
+    background-image: url('/Img/wave3.png');
+    background-size: 500px 230px;
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 230px;
+    transform: rotate(-180deg);
+}
+
+#postits{
+    margin-top: 95px;
+    margin-left:25px;
+}
+
+#postit-1{
+    height: 300px;
+    width: 300px;
+    background-image: url('/Img/postit1-2.png');
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    margin-left: 205px;
+    transform: rotate(15deg)
+}
+#postit-2{
+    height: 300px;
+    width: 300px;
+    background-image: url('/Img/postit1-2.png');
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    margin-left: 25px;
+    transform: rotate(-15deg);
+    margin-top: -90px;
+
+}
+#postit-3{
+    height: 300px;
+    width: 300px;
+    background-image: url('/Img/postit1-2.png');
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    margin-left: 255px;
+    transform: rotate(10deg);
+    margin-top: -150px;
+}
+
+#Container-Login{
+    height: 96vh;
+    width: 45vw; 
+    right: 20px;
+    top:12px;
+    margin: 0;
+    position:absolute;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: -1px 1px 12px 6px rgba(0, 0, 0, 0.3);
+}
